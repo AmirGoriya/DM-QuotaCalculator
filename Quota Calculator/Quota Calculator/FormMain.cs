@@ -16,5 +16,14 @@ namespace Quota_Calculator
         {
             InitializeComponent();
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                RowStyle row = new RowStyle();
+                tblQuotaChart.RowStyles.Add(row);
+            }
+        }
     }
 }
